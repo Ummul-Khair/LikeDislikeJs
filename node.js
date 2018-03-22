@@ -159,46 +159,6 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
  var lik = 0,
      dis = 0; //like and dislike are initialised to 0; 
 
@@ -230,16 +190,15 @@
              lik = ress.likes;
              lik = lik + 1;
      console.log(ress.name);
-   }
-   });
-   var newvalues = { $set: {likes: lik, dislikes: dis } };
+       var newvalues = { $set: {likes: lik, dislikes: dis } };
    myCollection.updateOne(query, newvalues, function(err, res) {
      if (err) throw err;
      console.log("1 document updated");
      db.close();
    });
-
-
+   }
+   });
+  
 
 });
  }
@@ -296,25 +255,16 @@
              // console.log(doc.company.employed);
              dis = dis + 1;
      console.log(ress.name);
-   }
-   });
-
-   
-
-   var newvalues = { $set: {likes: lik, dislikes: dis } };
+       var newvalues = { $set: {likes: lik, dislikes: dis } };
    myCollection.updateOne(query, newvalues, function(err, res) {
      if (err) throw err;
      console.log("1 document updated");
      db.close();
    });
+   }
+   });
 
-
-
-
-        
-        
-
-         
+  
 
      });
  }
