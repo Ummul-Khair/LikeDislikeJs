@@ -1,61 +1,76 @@
-<!DOCTYPE html>
-<html>
-
 <head>
-   <title>LikeDislike</title>
-   <link rel="stylesheet" href="css.css”>
+  <title>LikeDislike</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
-   <div class="firstsection">
-      <nav>
-         <div class="row">
-            <div class="col-md-6">
-               <h1>Like Me || Dislike Me</h1>
+  <div class="firstsection">
+    <nav>
+      <div class="row">
+        <div class="col-md-6">
+
+          <h1>Like Me || Dislike Me</h1>
+        </div>
+        <div class="col-md-6">
+          <ul>
+           
+            <li><a href= "#likeSelection" class="btn btn-info btn-lg">Like or Dislike</a></li>
+              <li><a href="#viewSelection" class="btn btn-info btn-lg" >View Statistics</a></li>
+            
+            </ul>
             </div>
-            <div class="col-md-6">
-               <ul>
-                  <li><a href= "#likeSelection" class="btn btn-info btn-lg">Like or Dislike</a></li>
-                  <li><a href="#viewSelection" class="btn btn-info btn-lg" >View Statistics</a></li>
-               </ul>
-            </div>
+        </div>
+         </nav>
          </div>
-      </nav>
-   </div>
-   <a id ="aboutSection" >
-      <div class = "aboutSection">
-         <div class="row">
-            <div class="col-md-6">
-               <p>Go to any room of your choice around campus and like or dislike depending on how it makes you feel. Check the statistics as well, to see how your fellow colleagues feel about different locations.</p>
-            </div>
+  
+          <a id ="aboutSection" ><div class = "aboutSection">
+          <div class="row">
+        <div class="col-md-6">
+          <p>Go to any room of your choice around campus and like or dislike depending on how it makes you feel. Check the statistics as well, to see how your fellow colleagues feel about different locations.</p>
+          </div>
+            
             <div class="col-md-6"> 
+              </div>
+          </a>  
+            
+            
+            
+            
+            
+            
+           <a id ="likeSelection" > <div class="col-md-6">
+             <h1>Current Location: Library IC1</h1>
+              </div>
+             <div class="col-md-6">   
+             <ul>       
+            <li><a onclick="myFunction()" href="http://localhost:3000/likes" target="_blank" class="btn btn-info btn-lg">Like</a></li>
+                <li><a href="http://localhost:3000/dislikes" target="_blank" class="btn btn-info btn-lg">Dislike</a></li>
+                <li><a href="http://localhost:3000/location" target="_blank" class="btn btn-info btn-lg">GetLocation</a></li>
+            </ul>            
+            </div></a>
+            
+            
+          </div>
+            </a>
+        </div>
+  <a id ="viewSelection" ><div class = "statsSection">
+          <div class="row">
+        <div class="col-md-12">
+          <p>Show collected data</p>
+           
+           
+           <div class="col-md-12">   
+             <ul>       
+            <li><a onclick=" onLoad()" href= "http://localhost:3000"  target="_blank"  class="btn btn-info btn-lg">Show Stats</a></li>
+                
+            </ul>            
             </div>
-   </a>
-   <a id ="likeSelection" > <div class="col-md-6">
-   <h1>Current Location: Library IC1</h1>
-   </div>
-   <div class="col-md-6">   
-   <ul>       
-   <li><a href="http://localhost:3000/likes" target="_blank" class="btn btn-info btn-lg">Like</a></li>
-   <li><a href="http://localhost:3000/dislikes" target="_blank" class="btn btn-info btn-lg">Dislike</a></li>
-   </ul>            
-   </div></a>
-   </div>
-   </a>
-   </div>
-   <a id ="viewSelection" >
-      <div class = "statsSection">
-         <div class="row">
-            <div class="col-md-12">
-               <p>Show collected data</p>
-               <div class="col-md-12">
-                  <ul>
-                     <li>
-   <a onclick=" onLoad()" href= "http://localhost:3000"  target="_blank"  class="btn btn-info btn-lg">Show Stats</a></li>
-   </ul>            
-   </div>
-   </div>   
-   </div>
-   </a>      
-   </div>
-</body>
-</html>
+           
+           
+          </div>
+            
+          </div>
+            </a>
+          
+    </div>
+   </body>
